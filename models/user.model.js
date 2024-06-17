@@ -16,7 +16,7 @@ const UserSchema = mongoose.Schema(
             type: String,
             required: true,
         },
-        organization_id: {
+        organizationID: {
             type: String,
             required: true,
         }
