@@ -20,6 +20,7 @@ const TicketSchema = mongoose.Schema(
         organizationID: {
             type: String,
             required: true,
+            ref: 'User',
         },
 
         role: {
