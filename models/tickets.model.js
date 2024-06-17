@@ -2,27 +2,27 @@ const mongoose = require('mongoose');
 
 const TicketSchema = mongoose.Schema(
     {
-        subject: {
+        problem_class: {
             type: String,
             required: true,
         },
 
-        description:{
+        problem_statement:{
             type: String,
             required: true,
         },
         
-        customer_id:{
+        customer_email:{
             type: mongoose.Schema.Types.ObjectId,
             ref: 'User',
         },
 
-        status: {
+        organizationID: {
             type: String,
             required: true,
         },
 
-        priority: {
+        role: {
             type:String,
             required: false,
         },
