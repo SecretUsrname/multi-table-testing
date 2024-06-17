@@ -18,9 +18,9 @@ const TicketSchema = mongoose.Schema(
         },
 
         organizationID: {
-            type: String,
+            type: mongoose.Schema.Types.ObjectId,
             required: true,
-            ref: 'User',
+            ref: 'Organization',
         },
 
         role: {
