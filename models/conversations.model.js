@@ -30,6 +30,11 @@ const conversations = mongoose.Schema(
             type: [String],
             required: false
         },
+        status:{
+            type:[String],
+            required: true,
+            enum: ['pending', 'resolved'],
+        },
     },
     {
         timestamps: false,
