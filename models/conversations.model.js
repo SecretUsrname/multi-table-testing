@@ -13,6 +13,11 @@ const conversations = mongoose.Schema(
             type: String,
             required: true,
         },
+        //Queries asked by User
+        user_queries{
+            type: [String],
+            required: true,
+        },
         // response given by the expert
         response: {
             //multiple responses while guiding for a solution
